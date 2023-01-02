@@ -1,0 +1,38 @@
+PODS:
+  - Kingfisher (7.4.1)
+  - netfox (1.21.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - YoutubePlayerView (1.2.1)
+
+DEPENDENCIES:
+  - Kingfisher
+  - netfox
+  - RxCocoa
+  - RxSwift
+  - YoutubePlayerView
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - netfox
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - YoutubePlayerView
+
+SPEC CHECKSUMS:
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  YoutubePlayerView: 3870fc10f2db3f54156697757f44d304203bdc7e
+
+PODFILE CHECKSUM: cd09b24555bdd076605b2e571ba43954a8457ef9
+
+COCOAPODS: 1.11.3

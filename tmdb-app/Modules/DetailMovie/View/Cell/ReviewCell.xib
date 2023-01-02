@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="250" id="iv4-m0-xkJ" customClass="ReviewCell" customModule="tmdb_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iv4-m0-xkJ" id="Wz9-oV-uYC">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-4Y-Dc8">
+                        <rect key="frame" x="0.0" y="6" width="361" height="238"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-xa-uPR">
+                                <rect key="frame" x="0.0" y="6" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="m7n-Ak-TAb"/>
+                                    <constraint firstAttribute="width" secondItem="OOb-xa-uPR" secondAttribute="height" multiplier="1:1" id="pIt-cy-Hpc"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Cc-44-wmC">
+                                <rect key="frame" x="52" y="9.3333333333333321" width="309" height="33.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpi-Ts-1ym">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd5-ya-QzV">
+                                        <rect key="frame" x="0.0" y="19" width="309" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-f6-0YV">
+                                <rect key="frame" x="52" y="50.666666666666671" width="309" height="181.33333333333331"/>
+                                <string key="text">Known as the founder of Coaching Indonesia, Al is an
+executive coach and entrepreneur who consistently
+develops coaching in various applications, including
+digital solutions. He is the first Indonesian who
+achieves the highest credentials of MCC (Master
+Certified Coach) of ICF (International Coaching
+Federation) accumulating over 2500 hours of
+coaching experience.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Cc-44-wmC" firstAttribute="leading" secondItem="OOb-xa-uPR" secondAttribute="trailing" constant="12" id="4Uk-0J-Qpv"/>
+                            <constraint firstAttribute="trailing" secondItem="5Cc-44-wmC" secondAttribute="trailing" id="5tQ-ip-UfP"/>
+                            <constraint firstAttribute="trailing" secondItem="l4Y-f6-0YV" secondAttribute="trailing" id="7VC-BN-Mj1"/>
+                            <constraint firstItem="OOb-xa-uPR" firstAttribute="top" secondItem="mIt-4Y-Dc8" secondAttribute="top" constant="6" id="CDo-AQ-n5h"/>
+                            <constraint firstItem="l4Y-f6-0YV" firstAttribute="top" secondItem="5Cc-44-wmC" secondAttribute="bottom" constant="8" id="Nea-qY-ThM"/>
+                            <constraint firstItem="5Cc-44-wmC" firstAttribute="centerY" secondItem="OOb-xa-uPR" secondAttribute="centerY" id="R5O-Jz-801"/>
+                            <constraint firstAttribute="bottom" secondItem="l4Y-f6-0YV" secondAttribute="bottom" constant="6" id="T7W-Ks-HDh"/>
+                            <constraint firstItem="OOb-xa-uPR" firstAttribute="leading" secondItem="mIt-4Y-Dc8" secondAttribute="leading" id="Wnz-Kt-Qpu"/>
+                            <constraint firstItem="l4Y-f6-0YV" firstAttribute="leading" secondItem="5Cc-44-wmC" secondAttribute="leading" id="jv8-My-gua"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mIt-4Y-Dc8" secondAttribute="trailing" id="0kA-6S-ezV"/>
+                    <constraint firstItem="mIt-4Y-Dc8" firstAttribute="top" secondItem="Wz9-oV-uYC" secondAttribute="top" constant="6" id="Dc9-NL-MNg"/>
+                    <constraint firstAttribute="bottom" secondItem="mIt-4Y-Dc8" secondAttribute="bottom" constant="6" id="l5k-Ek-WO3"/>
+                    <constraint firstItem="mIt-4Y-Dc8" firstAttribute="leading" secondItem="Wz9-oV-uYC" secondAttribute="leading" id="qzt-yI-6fU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="6K3-vc-pFv"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLbl" destination="Wd5-ya-QzV" id="Cio-wc-CaB"/>
+                <outlet property="imgAva" destination="OOb-xa-uPR" id="U2i-jt-O3p"/>
+                <outlet property="nameLbl" destination="zpi-Ts-1ym" id="1Ut-hC-Oa3"/>
+                <outlet property="reviewLbl" destination="l4Y-f6-0YV" id="RZY-Td-9ld"/>
+            </connections>
+            <point key="canvasLocation" x="165.38461538461539" y="210.42654028436019"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person-placeholder" width="54" height="54"/>
+    </resources>
+</document>
